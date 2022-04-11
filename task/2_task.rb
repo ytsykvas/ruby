@@ -7,8 +7,14 @@ _instructions = %(
 Create a method `bool_to_word` that takes an boolean as an argument and returns a "Yes" string for true,
 or a "No" string for false.
 )
-
 # Code
+def bool_to_word(yn)
+  if (yn == true)
+    return 'Yes'
+  else
+    return 'No'
+  end
+end
 
 # Recommendations
 _helper = %(

@@ -9,7 +9,9 @@ The method should take array of integers as argument.
 )
 
 # Code
-
+def positive_sum(arr)
+  return arr.select {|value| value > 0}.sum
+end
 # Recommendations
 _helper = %(
   Methods `select`, `sum`

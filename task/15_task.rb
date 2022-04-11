@@ -10,7 +10,13 @@ Array can contain numbers or strings. X can be either.
 Return true if the array contains the value, false if not.
 )
 # Code
-
+def check(obj1, obj2)
+  if (obj1.include?(obj2))
+    return true
+  else
+    return false
+  end
+end
 # Recommendations
 _helper = %(
   methods `include?`

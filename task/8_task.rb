@@ -9,7 +9,9 @@ The method should take array of integers as argument.
 )
 
 # Code
-
+def doubled(arr)
+  arr.map {|n| n * 2}
+end
 # Recommendations
 _helper = %(
   Methods `map`

@@ -7,7 +7,9 @@ _instructions = %(
 Create a method `biggest_and_smallest` that takes an array of integers and returns the the biggest and the smallest.
 )
 # Code
-
+def biggest_and_smallest(arr)
+  return arr.minmax.reverse
+end
 # Recommendations
 _helper = %(
   methods `min`, `max`

@@ -9,7 +9,15 @@ The method should take two arrays as arguments.
 )
 
 # Code
-
+def remove(arr_1, arr_2)
+  arr_1.each do |i|
+    arr_2.each do |s|
+      if (s == i)
+        arr_1.delete(s)
+      end
+    end
+  end
+end
 # Recommendations
 _helper = %(
   Ruby Array operations
