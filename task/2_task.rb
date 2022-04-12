@@ -8,12 +8,8 @@ Create a method `bool_to_word` that takes an boolean as an argument and returns 
 or a "No" string for false.
 )
 # Code
-def bool_to_word(yn)
-  if (yn == true)
-    return 'Yes'
-  else
-    return 'No'
-  end
+def bool_to_word(bool)
+  bool ? 'Yes' : 'No' 
 end
 
 # Recommendations

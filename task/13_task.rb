@@ -8,9 +8,8 @@ Create a method `smash` that takes an array of words and smashes them together i
 )
 # Code
 def smash(arr)
-  #arr = arr.split(//)
-  arr = arr.join(" ").to_s
-  return arr
+  arr.join(' ')
+  #arr = arr.join(" ").to_s
 end
 # Recommendations
 _helper = %(

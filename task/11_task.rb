@@ -10,6 +10,15 @@ Create a method `count_and_sum` that takes an arrays of integers as an argument 
 )
 # Code
 def count_and_sum(arr)
+  return [] if arr.empty?
+  
+  positives_count = arr.count(&:positive?)
+  negatives_sum = arr.select(&:negative?).sum
+  
+  [positives_count, negatives_sum]
+end
+=begin
+def count_and_sum(arr)
   if (arr.empty?)
     return arr
   else
@@ -18,6 +27,7 @@ def count_and_sum(arr)
     return [a, b]
   end
 end
+=end
 # Recommendations
 _helper = %(
   methods `select`, `empty?`, `count`

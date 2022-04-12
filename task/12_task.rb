@@ -8,6 +8,10 @@ Create a method `fake_binary` that takes a string of digits as an argument and r
 The method should replace any digit below 5 with '0' and any digit 5 and above with '1'. Return the resulting string.
 )
 # Code
+def fake_binary(str)
+  str.split('').map { |x| x.to_i < 5 ? 0 : 1 }.join
+end
+=begin
 def fake_binary(arr)
   new_arr = []
   arr = arr.split(//)
@@ -24,6 +28,7 @@ def fake_binary(arr)
   end
   p new_arr.join.to_s
 end
+=end
 # Recommendations
 _helper = %(
   methods `split`, `join`

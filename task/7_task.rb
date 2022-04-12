@@ -9,20 +9,9 @@ The method should take string with list of numbers as arguments.
 )
 
 # Code
-def high_and_low (string)
-  arr = string.split(" ")
-  min = arr[0].to_i
-  max = arr[0].to_i
-  arr.each do |item|
-    item = item.to_i
-    if (item <= min)
-      min = item
-    end
-    if (item >= max)
-      max = item
-    end
-  end
-  return "#{max} #{min}"
+def high_and_low(numbers)
+  numbers = numbers.split.map(&:to_i)
+  "#{numbers.max} #{numbers.min}"
 end
 
 # Recommendations

@@ -8,7 +8,7 @@ Create a method `biggest_and_smallest` that takes an array of integers and retur
 )
 # Code
 def biggest_and_smallest(arr)
-  return arr.minmax.reverse
+  [arr.max, arr.min]
 end
 # Recommendations
 _helper = %(
