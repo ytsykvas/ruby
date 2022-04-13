@@ -9,7 +9,9 @@ The method should take two numbers as arguments.
 )
 
 # Code
-
+def range(a,b)
+  return (a+1...b).to_a
+end
 # Recommendations
 _helper = %(
   Ruby Ranges

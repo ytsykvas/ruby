@@ -9,7 +9,25 @@ Create a method `count_and_sum` that takes an arrays of integers as an argument 
 0 is neither positive nor negative. If the input array is empty or null, return an empty array.
 )
 # Code
-
+def count_and_sum(arr)
+  return [] if arr.empty?
+  
+  positives_count = arr.count(&:positive?)
+  negatives_sum = arr.select(&:negative?).sum
+  
+  [positives_count, negatives_sum]
+end
+=begin
+def count_and_sum(arr)
+  if (arr.empty?)
+    return arr
+  else
+    a =  arr.select{|n| n > 0}.count
+    b = arr.select{|n| n < 0}.sum
+    return [a, b]
+  end
+end
+=end
 # Recommendations
 _helper = %(
   methods `select`, `empty?`, `count`

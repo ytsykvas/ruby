@@ -9,6 +9,9 @@ or "Odd" for odd numbers.
 )
 
 # Code
+def even_or_odd (num)
+  num.odd? ? 'Odd' : 'Even'
+end
 
 # Recommendations
 _helper = %(

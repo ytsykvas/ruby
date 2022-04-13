@@ -9,7 +9,10 @@ all odd numbers into a new array.
 )
 
 # Code
-
+def odd_numbers(arr)
+  arr.select(&:odd?)
+  # to same-   arr.select{|n| n.odd?}
+end
 # Recommendations
 _helper = %(
   methods `select`

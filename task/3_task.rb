@@ -11,7 +11,20 @@ If invalid value for operation returns string 'Invalid operator'
 )
 
 # Code
-
+def basic_operations(operation, value1, value2)
+  case operation
+    when '+'
+      value1 + value2
+    when '-'
+      value1 - value2
+    when '*'
+      value1 * value2
+    when '/'
+      value1 / value2
+    else
+     'Invalid operator'
+  end
+end
 # Recommendations
 _helper = %(
   Ruby Case Statements

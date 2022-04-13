@@ -9,7 +9,9 @@ The method should take two arrays as arguments.
 )
 
 # Code
-
+def remove(integer_list, values_list)
+  integer_list - values_list
+end
 # Recommendations
 _helper = %(
   Ruby Array operations

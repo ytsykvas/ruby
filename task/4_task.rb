@@ -14,6 +14,18 @@ if bmi > 30 return "Obese"
 )
 
 # Code
+def bmi(weight, height)
+  i = weight/(height**2).to_f
+  if (i <= 18.5)
+    return "Underweight"
+  elsif (i <= 25.0)
+    return "Normal"
+  elsif (i <= 30.0)
+    return "Overweight"
+  elsif (i > 30)
+    return "Obese"
+  end 
+end
 
 # Recommendations
 _helper = %(
