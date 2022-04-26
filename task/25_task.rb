@@ -9,14 +9,9 @@ The output should be two capital letters with a dot separating them.
 )
 
 # Code
-def abbrev_name(str)
-  arr_main = str.split(' ')
-  arr_1 = arr_main[0].split('')
-  arr_2 = arr_main[1].split('')
-  x = arr_1[0].to_s.upcase + "."
-  y = arr_2[0].to_s.upcase
-  return x + y
-  #i`m sure that here is an easier solution BUT this shit works :)
+def abbrev_name(full_name)
+  first_name, last_name = full_name.split(' ')
+  "#{first_name[0]}.#{last_name[0]}"
 end
 
 # Recommendations

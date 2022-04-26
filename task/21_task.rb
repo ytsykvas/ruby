@@ -9,7 +9,7 @@ Create a method `array_to_string` that takes an string and convert it into an ar
 
 # Code
 def array_to_string(string)
-  string.split()
+  string.split
 end
 # Recommendations
 _helper = %(
